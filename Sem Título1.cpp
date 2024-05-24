@@ -128,7 +128,8 @@ int main()
 	//opÃ§Ãµes do menu
 		printf("\t1 Registrar nome  \n\n");
 		printf("\t2 Consultar os nome \n\n");
-		printf("\t3 Deletar Nomes \n "); 
+		printf("\t3 Deletar Nomes \n\n "); 
+		printf("\t4 Sair do sistema\n\n");
 		printf("Opcao:");//fim do menu
 	
 		scanf("%d", &opcao); //codigo para armaze na opcao, a variavel que o usuario digitar.
@@ -139,22 +140,27 @@ int main()
 		
 		switch(opcao)
 		{
-		case 1:
-	 	registrar();
-		break;
+			case 1:
+	 		registrar();
+			break;
 	
-		case 2:
-		consultar();
-		break;	
-	 
-	 	case 3:
-	 	deletar();
-	 	break;	
+			case 2:
+			consultar();
+			break;	
+	 	
+	 		case 3:
+	 		deletar();
+	 		break;	
+	 	
+	 		case 4:
+	 		printf("obrigado por utilizar o sistema!\n");
+	 		return 0;
+	 		break;
 		
-		default:
-		printf("Essa opção não esta disponível!\n");
-		system("pause");
-		break;
+			default:
+			printf("Essa opção não esta disponível!\n");
+			system("pause");
+			break;
 		
 		}
 	}
